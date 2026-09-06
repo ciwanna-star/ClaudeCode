@@ -1,4 +1,4 @@
-# Summit Air HVAC Website
+# Nanaimo HVAC Website
 
 A static marketing website for an HVAC company, built with plain HTML, CSS, and JavaScript — no build step or dependencies required. Includes a prominent product safety recall notice for select Daikin/Amana air conditioner and heat pump models.
 

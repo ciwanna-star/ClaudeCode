@@ -11,6 +11,8 @@ A static marketing website for an HVAC company, built with plain HTML, CSS, and 
 ├── styles.css      # Shared styling (orange & blue theme, responsive layout)
 ├── script.js       # Shared mobile nav toggle and demo contact form handling
 ├── favicon.svg     # Browser tab icon
+├── robots.txt      # Crawler rules + sitemap reference
+├── sitemap.xml     # Lists indexable pages for search engines
 └── README.md
 ```
 
@@ -53,6 +55,12 @@ npx serve .
 - **Recall notice**: The affected models table and recall details live in the `#recall` section of both `index.html` and `landing.html`. Update the model numbers, recall date, or instructions in both files.
 - **Branding colors**: Orange and blue theme colors are defined as CSS custom properties at the top of `styles.css` (`--blue-*` and `--orange-*` variables).
 - **Contact form**: `script.js` currently handles the contact form on the client side only (no backend). Wire it up to a real endpoint or form service before using it in production.
+
+## SEO
+
+Both pages include on-page SEO basics for Google: unique `<title>`/meta description per page, a `robots` meta tag, canonical links, Open Graph/Twitter meta tags, and `HVACBusiness` JSON-LD structured data (name, phone, email, service area, hours). `robots.txt` and `sitemap.xml` are included at the site root.
+
+**Before going live**, update the placeholder domain `https://nanaimo-heat-pumps.ca` in `index.html`, `landing.html`, `robots.txt`, and `sitemap.xml` to match your actual production domain — canonical URLs and structured data must point to the real, live URL to be effective. Once live, submit `sitemap.xml` in [Google Search Console](https://search.google.com/search-console).
 
 ## Deployment
 

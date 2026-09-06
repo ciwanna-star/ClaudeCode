@@ -6,7 +6,7 @@ A static marketing website for an HVAC company, built with plain HTML, CSS, and 
 
 ```
 .
-├── index.html      # Full multi-section site (services, about, reviews, contact)
+├── index.html      # Full multi-section site (services, about, contact)
 ├── landing.html    # Conversion-focused single-page landing page (quote form)
 ├── styles.css      # Shared styling (orange & blue theme, responsive layout)
 ├── script.js       # Shared mobile nav toggle and demo contact form handling

@@ -6,11 +6,15 @@ A static marketing website for an HVAC company, built with plain HTML, CSS, and 
 
 ```
 .
-├── index.html    # Page markup and content
-├── styles.css    # Styling (orange & blue theme, responsive layout)
-├── script.js     # Mobile nav toggle and demo contact form handling
+├── index.html      # Full multi-section site (services, about, reviews, contact)
+├── landing.html    # Conversion-focused single-page landing page (quote form)
+├── styles.css      # Shared styling (orange & blue theme, responsive layout)
+├── script.js       # Shared mobile nav toggle and demo contact form handling
+├── favicon.svg     # Browser tab icon
 └── README.md
 ```
+
+`index.html` and `landing.html` share the same `styles.css` and `script.js`, so both stay on-brand automatically. Use `landing.html` for ad campaigns or anywhere you want a single, focused call to action (free quote); use `index.html` as the full company site.
 
 ## Setup
 
@@ -46,10 +50,10 @@ npx serve .
 
 ## Editing Content
 
-- **Recall notice**: The affected models table and recall details live in the `#recall` section of `index.html`. Update the model numbers, recall date, or instructions there.
+- **Recall notice**: The affected models table and recall details live in the `#recall` section of both `index.html` and `landing.html`. Update the model numbers, recall date, or instructions in both files.
 - **Branding colors**: Orange and blue theme colors are defined as CSS custom properties at the top of `styles.css` (`--blue-*` and `--orange-*` variables).
 - **Contact form**: `script.js` currently handles the contact form on the client side only (no backend). Wire it up to a real endpoint or form service before using it in production.
 
 ## Deployment
 
-Since this is a static site, it can be hosted on any static hosting provider (GitHub Pages, Netlify, Vercel, S3, etc.) by uploading `index.html`, `styles.css`, and `script.js` as-is.
+Since this is a static site, it can be hosted on any static hosting provider (GitHub Pages, Netlify, Vercel, S3, etc.) by uploading all files as-is.
